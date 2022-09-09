@@ -19,7 +19,12 @@ header .content {
     width: 100%;
     background-color: white;
 }
-
+.content a:hover {
+    color: orange;
+}
+.content a:active {
+    color: red;
+}
 .mobile {
     max-width: 480px;
 }
@@ -114,10 +119,16 @@ header .desktop {
     border-radius: 4px;
     color: white;
     margin: 26px 80px 56px 80px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 .banner .button a {
     color: white;
     text-decoration: none;
+}
+.banner .button:hover {
+    background-color: rgb(3, 56, 3);
 }
 .joinn .button h5 {
     text-align: center;
@@ -401,7 +412,7 @@ footer p {
        width: 100%;
     }
     header .mobile {
-        max-width: 480px;
+        width: 100%;
         display: inline-flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -451,7 +462,13 @@ footer p {
         padding: 3px 8px 3px 8px;
         text-align: center;
         margin-top: 10px;
-        margin-right: px;
+        margin-right: 20px;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+    }
+    .mobile .button2:hover {
+        background-color: green;
     }
     .section .feature1 {
         max-height: 580px;
